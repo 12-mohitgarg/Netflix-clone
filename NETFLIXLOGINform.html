@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netflix Log in</title>
+    <link rel="icon" href="fabicon.png">
+    <link  rel="stylesheet"  href="netlogin.css">
+</head>
+<body>
+   <div >
+    <form>
+        
+        <div class="hello">
+            <span style="margin-left: 100px;font-size: 30px;"><b>Login detail</b></span>
+            <br>
+            <br>
+            Name-<input type="text" required name="text" placeholder="Enter your name">
+            <br>
+            <br>
+            email- <input type="email" id="email" required name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            password- <input type="password" id="password" required name="password" placeholder="" minlength="6" maxlength="12" style="margin-left: 5px;">
+            <br>
+            <br>
+            <div style="margin-left: 70px;margin-top: -10px;">
+                <input type="submit" id="submit" onclick="func1()" >
+                <input type="reset" id="password" style="margin-left: 4px;">
+            </div>
+        
+    </div>
+    </form>
+</div>
+</body>
+<script>
+    function func1(){
+        var email= document.getElementById("email").value;
+        var password= document.getElementById("password").value;
+        if(email=='gargmohit8306@gmail.com' && password=='mohit8306')
+    
+         window.location.assign("newnet.html")
+        
+        else
+        {
+            alert("wrong entry")
+        }
+    }
+</script>
+</html>
